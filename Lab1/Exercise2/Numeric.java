@@ -1,3 +1,4 @@
+package Exercise2;
 public class Numeric
 {  /**
       Tests whether two floating-point numbers are
@@ -16,4 +17,5 @@ public class Numeric
       return(false);
    }
    // more numeric methods can be added here
+   
 }
