@@ -1,7 +1,7 @@
 public class LinearSummation {
 	public static void main(String[] args) {
 		long start = System.currentTimeMillis(); //Get start time of program
-		int n = 15;
+		int n = 1500000000;
 		LinearSummation(n);
 		long end = System.currentTimeMillis(); // End time of program
 		long runTime = end - start; //Calculate Duration
