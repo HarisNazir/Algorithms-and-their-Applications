@@ -1,10 +1,14 @@
 public class LinearSummation {
 	public static void main(String[] args) {
+		long start = System.currentTimeMillis(); //Get start time of program
 		int n = 15;
-		System.out.println(LinearSummation(n));
+		LinearSummation(n);
+		long end = System.currentTimeMillis(); // End time of program
+		long runTime = end - start; //Calculate Duration
+		System.out.println(runTime);
 	}
 	
-	public static int LinearSummation(int n) {
+	public static void LinearSummation(int n) {
 		int sum = 0;
 		int i;
 		
@@ -13,7 +17,7 @@ public class LinearSummation {
 		}
 		
 		//sum = sum + (n-1) + 1;
-		return sum;
+		System.out.println(sum);
 		
 	}
 	
