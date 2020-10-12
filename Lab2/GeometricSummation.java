@@ -3,9 +3,9 @@ public class GeometricSummation {
 	public static void main(String[] args) {
 		double a = 1;
 		double N = 3;
-		long start = System.currentTimeMillis();
+		long start = System.nanoTime();
 		double finalAnswer = geoSum(a, N);
-		long end = System.currentTimeMillis();
+		long end = System.nanoTime();
 		long runTime = end - start;
 		System.out.println("Final Answer: " + finalAnswer);
 		System.out.println("Run Time " + runTime);

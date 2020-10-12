@@ -1,14 +1,15 @@
 public class LinearSummation {
 	public static void main(String[] args) {
-		long start = System.currentTimeMillis(); //Get start time of program
 		int n = 1500000000;
-		LinearSummation(n);
-		long end = System.currentTimeMillis(); // End time of program
+		long start = System.nanoTime(); //Get start time of program
+		int finalAnswer = LinearSummation(n);
+		long end = System.nanoTime(); // End time of program
 		long runTime = end - start; //Calculate Duration
-		System.out.println(runTime);
+		System.out.println("Final Answer: " + finalAnswer);
+		System.out.println("Run Time: " + runTime);
 	}
 	
-	public static void LinearSummation(int n) {
+	public static int LinearSummation(int n) {
 		int sum = 0;
 		int i;
 		
@@ -17,7 +18,7 @@ public class LinearSummation {
 		}
 		
 		//sum = sum + (n-1) + 1;
-		System.out.println(sum);
+		return sum;
 		
 	}
 	
