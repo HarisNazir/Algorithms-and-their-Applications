@@ -7,7 +7,7 @@ public class AnalysisOfAlgorithms1 {
 	}
 	
 	public static double[] PrefixAverages1(double[] x) {
-		double a[] = new double[] {};
+		double a[] = new double[x.length];
 		
 		for(int i = 0; i <= x.length - 1; i++) {
 			double s = x[0];
