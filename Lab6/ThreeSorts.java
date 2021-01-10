@@ -14,12 +14,16 @@ public class ThreeSorts {
 
     }
 
+    public static  void showArray(ArrayList<Integer> numbers){
+        System.out.println(numbers);
+    }
+
     public static void main(String[] args){
         int n = 5;
         ThreeSorts arrList = new ThreeSorts();
 
         ArrayList<Integer> arrayList = arrList.randomArray(n);
 
-        System.out.println(arrayList);
+        showArray(arrayList);
     }
 }
